@@ -12,14 +12,15 @@ farenheitToCelsius should return celsius from the farenheit value
 */
 
 public class CtoFTester{
-  public static void celsiusToFahrenheit(){
-
+  public static double celsiusToFahrenheit(double celsius){
+    return 9*celsius/5+32; // 9/5C+35
 
   }
-  public static void farenheitToCelsius(){
-
+  public static double fahrenheitToCelsius(double fahrenheit){
+    return (fahrenheit-32)*5/9; // 5/9(F-32)
   }
   public static void main(String[] args){
-
+    System.out.println(celsiusToFahrenheit(35));
+    System.out.println(fahrenheitToCelsius(50));
   }
 }
